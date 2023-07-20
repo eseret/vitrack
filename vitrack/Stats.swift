@@ -106,12 +106,63 @@ extension ChartData {
                                     .font(.title2)
                                     .fontWeight(.bold)
                                     .foregroundColor(Color("MBlue"))
-                                NavigationLink(destination: test()) {
-                                    Text("Let's Do It!")
+
+                                if topWorkout == "head"{
+                                    NavigationLink(destination: Holistic()) {
+                                        Text("Let's Do It!")
+                                    }
+                                    .font(.title3)
+                                    .buttonStyle(.borderedProminent)
+                                    .tint(Color("GBlue"))
                                 }
-                                .font(.title3)
-                                .buttonStyle(.borderedProminent)
-                                .tint(Color("GBlue"))
+                                if topWorkout == "shoulders"{
+                                    NavigationLink(destination: shoulderScreen()) {
+                                        Text("Let's Do It!")
+                                    }
+                                    .font(.title3)
+                                    .buttonStyle(.borderedProminent)
+                                    .tint(Color("GBlue"))
+                                }
+                                if topWorkout == "stomach"{
+                                    NavigationLink(destination: Holistic()) {
+                                        Text("Let's Do It!")
+                                    }
+                                    .font(.title3)
+                                    .buttonStyle(.borderedProminent)
+                                    .tint(Color("GBlue"))
+                                }
+                                if topWorkout == "wrist"{
+                                    NavigationLink(destination: wristScreen()) {
+                                        Text("Let's Do It!")
+                                    }
+                                    .font(.title3)
+                                    .buttonStyle(.borderedProminent)
+                                    .tint(Color("GBlue"))
+                                }
+                                if topWorkout == "quads"{
+                                    NavigationLink(destination: quadScreen()) {
+                                        Text("Let's Do It!")
+                                    }
+                                    .font(.title3)
+                                    .buttonStyle(.borderedProminent)
+                                    .tint(Color("GBlue"))
+                                }
+                                if topWorkout == "calves"{
+                                    NavigationLink(destination: calfScreen()) {
+                                        Text("Let's Do It!")
+                                    }
+                                    .font(.title3)
+                                    .buttonStyle(.borderedProminent)
+                                    .tint(Color("GBlue"))
+                                }
+                                if topWorkout == "ankles"{
+                                    NavigationLink(destination: ankleScreen()) {
+                                        Text("Let's Do It!")
+                                    }
+                                    .font(.title3)
+                                    .buttonStyle(.borderedProminent)
+                                    .tint(Color("GBlue"))
+                                }
                             }
                         }
                     }

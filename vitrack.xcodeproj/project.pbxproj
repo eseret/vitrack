@@ -7,26 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD1867832A69D856004D1BE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1867822A69D856004D1BE5 /* ContentView.swift */; };
+		BD1867872A69D878004D1BE5 /* ankleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1867842A69D878004D1BE5 /* ankleScreen.swift */; };
+		BD1867882A69D878004D1BE5 /* calfScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1867852A69D878004D1BE5 /* calfScreen.swift */; };
+		BD18678D2A69D88D004D1BE5 /* homeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD18678B2A69D88D004D1BE5 /* homeScreen.swift */; };
+		BD1867912A69D8B4004D1BE5 /* shoulderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD18678E2A69D8B4004D1BE5 /* shoulderScreen.swift */; };
+		BD1867922A69D8B4004D1BE5 /* quadScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD18678F2A69D8B4004D1BE5 /* quadScreen.swift */; };
+		BD1867932A69D8B4004D1BE5 /* LeagueSpartan-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD1867902A69D8B4004D1BE5 /* LeagueSpartan-Bold.otf */; };
+		BD1867952A69D932004D1BE5 /* wristScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1867942A69D932004D1BE5 /* wristScreen.swift */; };
+		BD1867A42A69DD84004D1BE5 /* ContentViewStreaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1867A12A69DD84004D1BE5 /* ContentViewStreaks.swift */; };
+		BD1867A52A69DD84004D1BE5 /* NewFriendAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1867A22A69DD84004D1BE5 /* NewFriendAddView.swift */; };
 		BD4EF53D2A684E7400076E66 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4EF53C2A684E7400076E66 /* Stats.swift */; };
-		BD58E3FA2A69AA7700A8849B /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58E3F92A69AA7700A8849B /* test.swift */; };
 		BD8392602A6745D50024F130 /* vitrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD83925F2A6745D50024F130 /* vitrackApp.swift */; };
-		BD8392622A6745D50024F130 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8392612A6745D50024F130 /* ContentView.swift */; };
 		BD8392672A6745D60024F130 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8392662A6745D60024F130 /* Preview Assets.xcassets */; };
 		BD8392692A6745D60024F130 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8392682A6745D60024F130 /* Persistence.swift */; };
 		BD83926C2A6745D60024F130 /* vitrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD83926A2A6745D60024F130 /* vitrack.xcdatamodeld */; };
 		BDE4684A2A685D7500922A83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE468492A685D7500922A83 /* Assets.xcassets */; };
+		BDECC46A2A69D40900B58F5D /* Holistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDECC4692A69D40900B58F5D /* Holistic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD1867822A69D856004D1BE5 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BD1867842A69D878004D1BE5 /* ankleScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ankleScreen.swift; sourceTree = "<group>"; };
+		BD1867852A69D878004D1BE5 /* calfScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calfScreen.swift; sourceTree = "<group>"; };
+		BD18678B2A69D88D004D1BE5 /* homeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeScreen.swift; sourceTree = "<group>"; };
+		BD18678E2A69D8B4004D1BE5 /* shoulderScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shoulderScreen.swift; sourceTree = "<group>"; };
+		BD18678F2A69D8B4004D1BE5 /* quadScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quadScreen.swift; sourceTree = "<group>"; };
+		BD1867902A69D8B4004D1BE5 /* LeagueSpartan-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeagueSpartan-Bold.otf"; sourceTree = "<group>"; };
+		BD1867942A69D932004D1BE5 /* wristScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wristScreen.swift; sourceTree = "<group>"; };
+		BD1867A12A69DD84004D1BE5 /* ContentViewStreaks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentViewStreaks.swift; path = "../../../Downloads/streaksPage 2/streaksPage/ContentViewStreaks.swift"; sourceTree = "<group>"; };
+		BD1867A22A69DD84004D1BE5 /* NewFriendAddView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewFriendAddView.swift; path = "../../../Downloads/streaksPage 2/streaksPage/NewFriendAddView.swift"; sourceTree = "<group>"; };
 		BD4EF53C2A684E7400076E66 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
-		BD58E3F92A69AA7700A8849B /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		BD83925C2A6745D50024F130 /* vitrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vitrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD83925F2A6745D50024F130 /* vitrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vitrackApp.swift; sourceTree = "<group>"; };
-		BD8392612A6745D50024F130 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD8392662A6745D60024F130 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD8392682A6745D60024F130 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		BD83926B2A6745D60024F130 /* vitrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vitrack.xcdatamodel; sourceTree = "<group>"; };
 		BDE468492A685D7500922A83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDECC4692A69D40900B58F5D /* Holistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holistic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +78,20 @@
 			isa = PBXGroup;
 			children = (
 				BD83925F2A6745D50024F130 /* vitrackApp.swift */,
-				BD8392612A6745D50024F130 /* ContentView.swift */,
-				BDE468492A685D7500922A83 /* Assets.xcassets */,
+				BD1867822A69D856004D1BE5 /* ContentView.swift */,
+				BD18678B2A69D88D004D1BE5 /* homeScreen.swift */,
 				BD4EF53C2A684E7400076E66 /* Stats.swift */,
-				BD58E3F92A69AA7700A8849B /* test.swift */,
+				BDECC4692A69D40900B58F5D /* Holistic.swift */,
+				BD18678E2A69D8B4004D1BE5 /* shoulderScreen.swift */,
+				BD1867942A69D932004D1BE5 /* wristScreen.swift */,
+				BD18678F2A69D8B4004D1BE5 /* quadScreen.swift */,
+				BD1867852A69D878004D1BE5 /* calfScreen.swift */,
+				BD1867842A69D878004D1BE5 /* ankleScreen.swift */,
+				BD1867902A69D8B4004D1BE5 /* LeagueSpartan-Bold.otf */,
+				BD1867A12A69DD84004D1BE5 /* ContentViewStreaks.swift */,
+				BD1867A22A69DD84004D1BE5 /* NewFriendAddView.swift */,
 				BD8392682A6745D60024F130 /* Persistence.swift */,
+				BDE468492A685D7500922A83 /* Assets.xcassets */,
 				BD83926A2A6745D60024F130 /* vitrack.xcdatamodeld */,
 				BD8392652A6745D60024F130 /* Preview Content */,
 			);
@@ -139,6 +166,7 @@
 			files = (
 				BDE4684A2A685D7500922A83 /* Assets.xcassets in Resources */,
 				BD8392672A6745D60024F130 /* Preview Assets.xcassets in Resources */,
+				BD1867932A69D8B4004D1BE5 /* LeagueSpartan-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,12 +177,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDECC46A2A69D40900B58F5D /* Holistic.swift in Sources */,
 				BD83926C2A6745D60024F130 /* vitrack.xcdatamodeld in Sources */,
-				BD58E3FA2A69AA7700A8849B /* test.swift in Sources */,
+				BD1867832A69D856004D1BE5 /* ContentView.swift in Sources */,
+				BD1867952A69D932004D1BE5 /* wristScreen.swift in Sources */,
 				BD8392692A6745D60024F130 /* Persistence.swift in Sources */,
-				BD8392622A6745D50024F130 /* ContentView.swift in Sources */,
+				BD1867A42A69DD84004D1BE5 /* ContentViewStreaks.swift in Sources */,
+				BD1867882A69D878004D1BE5 /* calfScreen.swift in Sources */,
 				BD8392602A6745D50024F130 /* vitrackApp.swift in Sources */,
+				BD1867A52A69DD84004D1BE5 /* NewFriendAddView.swift in Sources */,
 				BD4EF53D2A684E7400076E66 /* Stats.swift in Sources */,
+				BD1867912A69D8B4004D1BE5 /* shoulderScreen.swift in Sources */,
+				BD18678D2A69D88D004D1BE5 /* homeScreen.swift in Sources */,
+				BD1867922A69D8B4004D1BE5 /* quadScreen.swift in Sources */,
+				BD1867872A69D878004D1BE5 /* ankleScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +321,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"vitrack/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vitrack/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,6 +350,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"vitrack/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vitrack/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
