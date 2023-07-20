@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD4EF53D2A684E7400076E66 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4EF53C2A684E7400076E66 /* Stats.swift */; };
+		BD58E3FA2A69AA7700A8849B /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58E3F92A69AA7700A8849B /* test.swift */; };
 		BD8392602A6745D50024F130 /* vitrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD83925F2A6745D50024F130 /* vitrackApp.swift */; };
 		BD8392622A6745D50024F130 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8392612A6745D50024F130 /* ContentView.swift */; };
 		BD8392672A6745D60024F130 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8392662A6745D60024F130 /* Preview Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		BD4EF53C2A684E7400076E66 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		BD58E3F92A69AA7700A8849B /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		BD83925C2A6745D50024F130 /* vitrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vitrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD83925F2A6745D50024F130 /* vitrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vitrackApp.swift; sourceTree = "<group>"; };
 		BD8392612A6745D50024F130 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				BD8392612A6745D50024F130 /* ContentView.swift */,
 				BDE468492A685D7500922A83 /* Assets.xcassets */,
 				BD4EF53C2A684E7400076E66 /* Stats.swift */,
+				BD58E3F92A69AA7700A8849B /* test.swift */,
 				BD8392682A6745D60024F130 /* Persistence.swift */,
 				BD83926A2A6745D60024F130 /* vitrack.xcdatamodeld */,
 				BD8392652A6745D60024F130 /* Preview Content */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD83926C2A6745D60024F130 /* vitrack.xcdatamodeld in Sources */,
+				BD58E3FA2A69AA7700A8849B /* test.swift in Sources */,
 				BD8392692A6745D60024F130 /* Persistence.swift in Sources */,
 				BD8392622A6745D50024F130 /* ContentView.swift in Sources */,
 				BD8392602A6745D50024F130 /* vitrackApp.swift in Sources */,
