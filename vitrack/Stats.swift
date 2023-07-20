@@ -10,7 +10,7 @@ import Charts
 
 struct Stats: View {
     var body: some View {
-        var topWorkout = "default"
+        @State var topWorkout = "default"
         ZStack{
             Color("LtBlue").ignoresSafeArea()
             VStack{
@@ -32,7 +32,7 @@ struct Stats: View {
                     .padding()
                     
                 HStack{
-                    Text("Total Exercises: " + String(totalExcersies))
+                    Text("Total Exercises: " + String(Int(totalExcersies)))
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(Color("MBlue"))
@@ -52,10 +52,13 @@ struct Stats: View {
                         .frame(width: 50, height: 55)
                 }
                 if totalExcersies > 0{
-                    let topWorkout = overuse()
-                }
-                if topWorkout != "default"{
-                    Text("You should rest your " + topWorkout)
+                     let topWorkout = overuse()
+                    if topWorkout != "default"{
+                        Text("You should rest your " + topWorkout)
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color("MBlue"))
+                    }
                 }
                 
             }
@@ -64,13 +67,19 @@ struct Stats: View {
 }
 func overuse() -> String{
     var workout = "default"
+
     for key in exercises.keys {
+        
         if exercises[key]! >= 4{
             if (exercises[key]!/totalExcersies)*100 >= 60{
+                    
+                    workout = key
                     return workout
+                
             }
         }
     }
+    
     return workout
 }
 
