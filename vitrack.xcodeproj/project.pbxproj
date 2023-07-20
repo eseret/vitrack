@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD4EF53D2A684E7400076E66 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4EF53C2A684E7400076E66 /* Stats.swift */; };
 		BD8392602A6745D50024F130 /* vitrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD83925F2A6745D50024F130 /* vitrackApp.swift */; };
 		BD8392622A6745D50024F130 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8392612A6745D50024F130 /* ContentView.swift */; };
-		BD8392642A6745D60024F130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8392632A6745D60024F130 /* Assets.xcassets */; };
 		BD8392672A6745D60024F130 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8392662A6745D60024F130 /* Preview Assets.xcassets */; };
 		BD8392692A6745D60024F130 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8392682A6745D60024F130 /* Persistence.swift */; };
 		BD83926C2A6745D60024F130 /* vitrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD83926A2A6745D60024F130 /* vitrack.xcdatamodeld */; };
+		BDE4684A2A685D7500922A83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE468492A685D7500922A83 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD4EF53C2A684E7400076E66 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		BD83925C2A6745D50024F130 /* vitrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vitrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD83925F2A6745D50024F130 /* vitrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vitrackApp.swift; sourceTree = "<group>"; };
 		BD8392612A6745D50024F130 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BD8392632A6745D60024F130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD8392662A6745D60024F130 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD8392682A6745D60024F130 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		BD83926B2A6745D60024F130 /* vitrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vitrack.xcdatamodel; sourceTree = "<group>"; };
+		BDE468492A685D7500922A83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 			children = (
 				BD83925F2A6745D50024F130 /* vitrackApp.swift */,
 				BD8392612A6745D50024F130 /* ContentView.swift */,
-				BD8392632A6745D60024F130 /* Assets.xcassets */,
+				BDE468492A685D7500922A83 /* Assets.xcassets */,
+				BD4EF53C2A684E7400076E66 /* Stats.swift */,
 				BD8392682A6745D60024F130 /* Persistence.swift */,
 				BD83926A2A6745D60024F130 /* vitrack.xcdatamodeld */,
 				BD8392652A6745D60024F130 /* Preview Content */,
@@ -131,8 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE4684A2A685D7500922A83 /* Assets.xcassets in Resources */,
 				BD8392672A6745D60024F130 /* Preview Assets.xcassets in Resources */,
-				BD8392642A6745D60024F130 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +150,7 @@
 				BD8392692A6745D60024F130 /* Persistence.swift in Sources */,
 				BD8392622A6745D50024F130 /* ContentView.swift in Sources */,
 				BD8392602A6745D50024F130 /* vitrackApp.swift in Sources */,
+				BD4EF53D2A684E7400076E66 /* Stats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

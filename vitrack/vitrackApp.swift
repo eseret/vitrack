@@ -6,6 +6,13 @@
 //
 
 import SwiftUI
+var streak = 0
+var hStreak = 0
+var exercises = [
+    "head":15, "shoulders":0,"stomach":0,"wrist":0,
+    "quads":0,"calves":0,"ankles":5,"default":0
+]
+var totalExcersies = 20
 
 @main
 struct vitrackApp: App {
