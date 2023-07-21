@@ -1,35 +1,48 @@
 //
 //  ContentView.swift
-//  vitrack
+//  fakeVitrack
 //
-//  Created by Scholar on 7/18/23.
+//  Created by Scholar on 7/19/23.
 //
 
 import SwiftUI
-import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-    
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-    //hi
     var body: some View {
         NavigationStack {
-            VStack{
-                NavigationLink(destination: Stats()) {
-                    Text("stats")
-                }
+            
+            ZStack {
+                Color("LtBlue").ignoresSafeArea()
+                    VStack {
+                        Text("Welcome to vitrack!")
+                            .fontWeight(.semibold)
+                            .font(.custom("LeagueSpartan-Bold", size: 30))
+                            .foregroundColor(Color("MBlue"))
+                            .padding()
+                        Image("logo")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .imageScale(.small)
+                            .foregroundColor(Color("MBlue"))
+                    }
+                    .toolbar {
+                        ToolbarItemGroup(placement: .status) {
+                            NavigationLink (destination: homeScreen()) {
+                                Text("Let's begin!")
+                                    .font(.title2)
+                                    .foregroundColor(Color("LtBlue"))
+                            }
+                        }
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(Color("MBlue"))
             }
         }
-        
     }
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-        }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
-    
 }
