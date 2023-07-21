@@ -8,7 +8,7 @@
 import SwiftUI
 var streak = 0
 var hStreak = 0
-var totalExcersies = 0.0
+var totalExercises = 29.0
 
 @main
 struct vitrackApp: App {

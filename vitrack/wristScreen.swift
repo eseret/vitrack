@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct wristScreen: View {
+    @State var wrists = 0.0
     var body: some View {
         NavigationStack {
             ZStack {
@@ -32,7 +33,11 @@ struct wristScreen: View {
                                 }
                                 Text("This instructional video includes guided exercises to relieve tension and increse mobility in the wrists.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: vitrackApp(exercises: ["wrist":0.0] += 1.0)) {
+                                Button(action: {
+                                    wrists += 1.0
+                                    exercises["wrist"] = wrists
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)
@@ -68,7 +73,11 @@ struct wristScreen: View {
                                 }
                                 Text("This video includes easy exercises to strengthen the muscles and mobility of your wrists, particularly after injuries like a sprained wrist.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: vitrackApp(exercises: ["wrist":0.0] += 1.0)) {
+                                Button(action: {
+                                    wrists += 1.0
+                                    exercises["wrist"] = wrists
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)
@@ -104,7 +113,11 @@ struct wristScreen: View {
                                 }
                                 Text("This video includes easy exercises to strengthen the muscles and mobility of your wrists to improve the dorsiflexion of your wrists.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: vitrackApp(exercises: ["wrist":0.0] += 1.0)) {
+                                Button(action: {
+                                    wrists += 1.0
+                                    exercises["wrist"] = wrists
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)

@@ -10,7 +10,7 @@ import WebKit
 
 struct shoulderScreen: View {
     
-//    @Binding var workout = [Double]()
+    //    @Binding var workout = [Double]()
     @State var shoulders = 0.0
     
     var body: some View {
@@ -37,9 +37,12 @@ struct shoulderScreen: View {
                                 }
                                 Text("This instructional video includes guided exercises to relieve tension and increse mobility in the shoulders.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: $shoulders += 1.0) {
+                                Button(action: {
+                                    shoulders += 1.0
+                                    exercises["shoulders"] = shoulders
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
-                                    
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)
                                         .padding()
@@ -47,7 +50,6 @@ struct shoulderScreen: View {
                                         .cornerRadius(15)
                                         .shadow(radius:15)
                                         .padding()
-                                    }
                                 }
                                 .padding(.leading, 40)
                             }
@@ -75,7 +77,11 @@ struct shoulderScreen: View {
                                 }
                                 Text("While targeted for those with the frozen shoulder/adhesive capsulitis, these exercises are effective for anyone struggling with shoulder aches and stiffness.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: vitrackApp(exercises: ["shoulders":0.0] += 1.0)) {
+                                Button(action: {
+                                    shoulders += 1.0
+                                    exercises["shoulders"] = shoulders
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)
@@ -111,7 +117,11 @@ struct shoulderScreen: View {
                                 }
                                 Text("This video includes easy exercises to strengthen the muscles and mobility of your shoulders.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: vitrackApp(exercises: ["shoulders":0.0] += 1.0)) {
+                                Button(action: {
+                                    shoulders += 1.0
+                                    exercises["shoulders"] = shoulders
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)
@@ -121,6 +131,7 @@ struct shoulderScreen: View {
                                         .shadow(radius:15)
                                         .padding()
                                 }
+                                
                                 .padding(.leading, 40)
                             }
                             .padding()
@@ -128,7 +139,6 @@ struct shoulderScreen: View {
                             .cornerRadius(15)
                             .shadow(radius:15)
                             .padding()
-                            
                         }
                     }
                     .toolbar {
@@ -151,10 +161,10 @@ struct shoulderScreen: View {
             }
         }
     }
-
+}
 
 struct shoulderScreen_Previews: PreviewProvider {
     static var previews: some View {
-       // shoulderScreen(workout: .array())
+        shoulderScreen()
     }
 }

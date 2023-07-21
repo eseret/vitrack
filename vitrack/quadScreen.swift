@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct quadScreen: View {
+    @State var quads = 0.0
     var body: some View {
         NavigationStack {
             ZStack {
@@ -32,7 +33,11 @@ struct quadScreen: View {
                                 }
                                 Text("This instructional video includes guided exercises to build strength in the quads.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: vitrackApp(exercises: ["quads":0.0] += 1.0)) {
+                                Button(action: {
+                                    quads += 1.0
+                                    exercises["quads"] = quads
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)
@@ -68,7 +73,11 @@ struct quadScreen: View {
                                 }
                                 Text("While targeted for those with pain in their knees, these exercises are effective for anyone interested in increasing mobility in their knees and strengthening their quads.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: vitrackApp(exercises: ["quads":0.0] += 1.0)) {
+                                Button(action: {
+                                    quads += 1.0
+                                    exercises["quads"] = quads
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)
@@ -104,7 +113,11 @@ struct quadScreen: View {
                                 }
                                 Text("This video includes easy exercises to strengthen the muscles and mobility of your quads.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: vitrackApp(exercises: ["quads":0.0] += 1.0)) {
+                                Button(action: {
+                                    quads += 1.0
+                                    exercises["quads"] = quads
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)

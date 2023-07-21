@@ -9,6 +9,7 @@ import SwiftUI
 import WebKit
 
 struct Holistic: View {
+    @State var holistics = 0.0
     var body: some View {
         ZStack{
             Color("LtBlue")
@@ -53,9 +54,18 @@ struct Holistic: View {
                     .padding(.vertical, 0.0)
                         
                         
-                        Button("I did this today!") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                        }
+                    Button(action: {
+                        holistics += 1.0
+                        exercises["holistics"] = holistics
+                    }) {
+                        Text("I completed this exercise!")
+                            .foregroundColor(Color("DBlue"))
+                            .lineLimit(1)
+                            .padding()
+                            .background(Rectangle() .foregroundColor(Color("LtBlue")))
+                            .cornerRadius(15)
+                            .shadow(radius:15)
+                    }
                         .padding(.top, 5.0)
                     }
                     
@@ -80,8 +90,18 @@ struct Holistic: View {
                         )
                         .padding(.vertical, -29.0)
                         
-                        Button("I did this today!") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                        Button(action: {
+                            holistics += 1.0
+                            exercises["holistics"] = holistics
+                            totalExercises += 1.0
+                        }) {
+                            Text("I completed this exercise!")
+                                .foregroundColor(Color("DBlue"))
+                                .lineLimit(1)
+                                .padding()
+                                .background(Rectangle() .foregroundColor(Color("LtBlue")))
+                                .cornerRadius(15)
+                                .shadow(radius:15)
                         }
                         .padding(.top, 45.0)
                     Image("Kimchi")
@@ -104,8 +124,18 @@ struct Holistic: View {
                         )
                         .padding(.vertical, -29.0)
                         
-                        Button("I did this today!") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                        Button(action: {
+                            holistics += 1.0
+                            exercises["holistics"] = holistics
+                            totalExercises += 1.0
+                        }) {
+                            Text("I completed this exercise!")
+                                .foregroundColor(Color("DBlue"))
+                                .lineLimit(1)
+                                .padding()
+                                .background(Rectangle() .foregroundColor(Color("LtBlue")))
+                                .cornerRadius(15)
+                                .shadow(radius:15)
                         }
                         .padding(.top, 45.0)
                     Image("appleCiderVinegar")
@@ -128,8 +158,18 @@ struct Holistic: View {
                         )
                         .padding(.vertical, -29.0)
                         
-                        Button("I did this today!") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                        Button(action: {
+                            holistics += 1.0
+                            exercises["holistics"] = holistics
+                            totalExercises += 1.0
+                        }) {
+                            Text("I completed this exercise!")
+                                .foregroundColor(Color("DBlue"))
+                                .lineLimit(1)
+                                .padding()
+                                .background(Rectangle() .foregroundColor(Color("LtBlue")))
+                                .cornerRadius(15)
+                                .shadow(radius:15)
                         }
                         .padding(.top, 45.0)
                         

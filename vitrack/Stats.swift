@@ -5,6 +5,9 @@
 //  Created by Scholar on 7/19/23.
 //
 
+var exercises = ["head":0.0, "shoulders":18.0,"stomach":0.0,"wrist":0.0,
+                 "quads":0.0,"calves":0.0,"ankles":0.0,"holistics":0.0, "default":0.0]
+
 import SwiftUI
 struct ChartData: Identifiable {
     var id = UUID()
@@ -15,10 +18,16 @@ struct ChartData: Identifiable {
 }
 extension ChartData {
     static var sample: [ChartData] {
-        [ ChartData(color:(Color("BRed")), value: exercises["head"]!, title: "Head"),ChartData(color:(Color("ORed")), value: exercises["shoulders"]!, title: "Sholders"),ChartData(color:(Color("ROrange")), value: exercises["stomach"]!, title: "Stomach"),
-          ChartData(color:(Color("LtOrange")), value: exercises["wrist"]!, title: "Wrist"),
-          ChartData(color:(Color("BYellow")), value: exercises["quads"]!, title: "Quads"), ChartData(color:(Color("canary")), value: exercises["calves"]!, title: "Calves"),ChartData(color:(Color("LtBYellow")), value: exercises["ankles"]!, title: "Ankles")
+//        [ ChartData(color:(Color("ORed")), value: exercises["shoulders"]!, title: "Shoulders"),
+//          ChartData(color:(Color("LtOrange")), value: exercises["wrist"]!, title: "Wrist"),
+//          ChartData(color:(Color("BYellow")), value: exercises["quads"]!, title: "Quads"), ChartData(color:(Color("canary")), value: exercises["calves"]!, title: "Calves"),ChartData(color:(Color("LtBYellow")), value: exercises["ankles"]!, title: "Ankles"),ChartData(color:(Color("BRed")), value: exercises["holistics"]!, title: "Holistics")
+//        ]
+        
+        [ ChartData(color:(Color("ORed")), value: 18, title: "Shoulders"),
+          ChartData(color:(Color("LtOrange")), value: 2, title: "Wrist"),
+          ChartData(color:(Color("BYellow")), value: 2, title: "Quads"), ChartData(color:(Color("canary")), value: 6, title: "Calves"),ChartData(color:(Color("LtBYellow")), value: 3, title: "Ankles"),ChartData(color:(Color("BRed")), value: 3, title: "Holistics")
         ]
+
     }
 }
     
@@ -54,7 +63,7 @@ extension ChartData {
                             }
                             
                             HStack{
-                                Text("Total Exercises: " + String(Int(totalExcersies)))
+                                Text("Total Exercises: " + String(Int(totalExercises)))
                                     .font(.title2)
                                     .fontWeight(.bold)
                                     .foregroundColor(Color("MBlue"))
@@ -99,7 +108,7 @@ extension ChartData {
                             setupChartData()
                         }
                         .padding()
-                        if totalExcersies > 0{
+                        if totalExercises > 0 {
                             let topWorkout = overuse()
                             if topWorkout != "default"{
                                 Text("You should rest your " + topWorkout)
@@ -184,7 +193,7 @@ extension ChartData {
         for key in exercises.keys {
             
             if exercises[key]! >= 4{
-                if (exercises[key]!/totalExcersies)*100 >= 60{
+                if (exercises[key]!/totalExercises)*100 >= 60{
                     
                     workout = key
                     return workout

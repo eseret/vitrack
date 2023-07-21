@@ -9,6 +9,7 @@ import SwiftUI
 import WebKit
 
 struct ankleScreen: View {
+    @State var ankles = 0.0
     var body: some View {
         NavigationStack {
             ZStack {
@@ -33,7 +34,11 @@ struct ankleScreen: View {
                                 }
                                 Text("This instructional video includes guided instruction on easy exercises to increase flexibility and mobility in ankles. Targeted for the elderly and those suffering from Arthritis.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: {exercises["ankles"]! += 1.0}) {
+                                Button(action: {
+                                    ankles += 1.0
+                                    exercises["ankles"] = ankles
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)
@@ -69,7 +74,11 @@ struct ankleScreen: View {
                                 }
                                 Text("This video includes easy exercises to strengthen the muscles and mobility of your ankles, particularly after injuries like a sprained ankle.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: {exercises["ankles"]! += 1.0 }) {
+                                Button(action: {
+                                    ankles += 1.0
+                                    exercises["ankles"] = ankles
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)
@@ -105,7 +114,11 @@ struct ankleScreen: View {
                                 }
                                 Text("This video includes easy exercises to strengthen the muscles and mobility of your ankles to improve the dorsiflexion of your ankles.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: {exercises["ankles"]! += 1.0}) {
+                                Button(action: {
+                                    ankles += 1.0
+                                    exercises["ankles"] = ankles
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct calfScreen: View {
+    @State var calves = 0.0
     var body: some View {
         NavigationStack {
             ZStack {
@@ -32,7 +33,11 @@ struct calfScreen: View {
                                 }
                                 Text("This instructional video includes guided exercises to increse mobility in the calves.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: vitrackApp(exercises: ["calves":0.0]) += 1.0) {
+                                Button(action: {
+                                    calves += 1.0
+                                    exercises["calves"] = calves
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)
@@ -68,7 +73,11 @@ struct calfScreen: View {
                                 }
                                 Text("These exercises are effective for increasing mobility and strengthening calf muscles.")
                                     .foregroundColor(Color("LtBlue"))
-                                Button (action: vitrackApp(exercises: ["calves":0.0] += 1.0)) {
+                                Button(action: {
+                                    calves += 1.0
+                                    exercises["calves"] = calves
+                                    totalExercises += 1.0
+                                }) {
                                     Text("I completed this exercise!")
                                         .foregroundColor(Color("DBlue"))
                                         .lineLimit(1)
